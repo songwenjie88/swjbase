@@ -1,0 +1,248 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right
+}
+.trast_hidden{
+    width:38px;
+    height:79px;
+    position: absolute;
+    right:0;
+    top:0;
+    /* cursor: pointer; */
+    background: url(http://staticcdn.shuidi.cn/shuidi/images/trusted-web3_01.png);
+}
+.trast_show{
+    width:38px;
+    height:40px;
+    float:right;
+    position: absolute;
+    right:0;
+    top:0;
+    display:none;
+    /* cursor: pointer; */
+    background:url(http://staticcdn.shuidi.cn/shuidi/images/trusted-web4_01.png);
+}
+/*信任部分*/
+#trast_container{
+    width:100%;
+    height:90px;
+    user-select: none;
+}
+.trast_t{
+    width:100%;
+    height:48px;
+    background-color: #21ad49
+}
+.trast_b{
+    width:100%;
+    height:42px;
+    background-color: #f0eadc;
+}
+.tt1{
+    width:36px;
+    height:37px;
+    margin-left:20px;
+    padding-top:14px;
+    /* background-color: red; */
+}
+.tt1 span{
+    display: block;
+    width:18px;
+    height:23px;
+    background:url(http://staticcdn.shuidi.cn/shuidi/images/trusted-web1_01.png);
+}
+.tt2{
+    line-height:48px;
+    color:#fff;
+}
+.tt3{
+    padding-top: 5px;
+    margin-left:35px;
+    margin-right:95px;
+
+}
+.tt3 a span{
+    display: block;
+    width:100px;
+    height:38px;
+    background:url(http://staticcdn.shuidi.cn/shuidi/images/trusted-web2_01_01_01.png);
+}
+.tt4 a {
+    color: #ffe6ae;
+    line-height:48px;
+}
+.trast_b div{
+    float:left;
+    width:292px;
+    height:43px;
+    line-height:43px;
+    font-size: 14px;
+    color: #5fbf89;
+}
+.trast_b i{
+    display: inline-block;
+    margin-top:14px;
+    margin-right:15px;
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background:url(http://staticcdn.shuidi.cn/shuidi/images/certification-hook-icon.png);
+}
+
+/*主推链接地址区*/
+.majorMenu ul{
+    width: 1188px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+.majorMenu ul li{
+    width: 196px;
+    height: 20px;
+    float: left;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    line-height: 21px;
+    border-right: 2px solid #000;
+}
+/* 页面底部 */
+
+#footer .footer-top{
+    width:100%;
+    height:234px;
+    background-color:rgb(52, 52, 52);
+}
+.ft-con{
+    width:1180px;
+    height:100%;
+    margin:0 auto;
+}
+#footer .footer-bottom{
+    width:100%;
+    height:90px;
+    border-top-color: rgb(129, 129, 129);
+    border-top-width: 3px;
+    border-top-style: solid;
+    background-color: rgb(102, 102, 102);
+}
+.fb-con{
+    width:1180px;
+    height:100%;
+    margin:0 auto;
+    text-align:center;
+
+}
+.fb-con a img{
+    margin-top:20px;
+}
+.fb-con div:nth-child(1){
+    float:left;
+}
+.fb-con div:nth-child(2){
+    display:inline-block;
+    margin-top:15px;
+    color:#ccc;
+    font-size:12px;
+    line-height:20px;
+}
+
+.ft-top{
+    width:100%;
+    height:75px;
+    border-bottom:1px dashed rgb(102, 102, 102);
+
+}
+.ft-top ul li{
+    float: left;
+    margin-left: 190px;
+    margin-top: 10px;
+}
+.ft-top ul li div:nth-child(2){
+    margin-left:5px;
+}
+.ft-top ul li dt{
+    font-size:18px;
+    color:#fff;
+}
+.ft-top ul li dd{
+    font-size:14px;
+    color:#BABABA;
+}
+/* .ft-bottom{
+    background-color: red;
+} */
+/* 主页图片链接区 */
+#imgLinks{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+#imgLinks img{
+    position: relative;
+    left:50%;
+    margin-left:-960px;
+    top:0;
+}
+
+/* 底部导航上半部分底部左侧 */
+.ft-b-l dl{
+    float:left;
+    width: 185px;
+    font-size:12px;
+    color:#fff;
+    margin-top:30px;
+   
+    
+}
+.ft-b-l dl a{
+    color:#fff;
+}
+.ft-b-l dl:nth-child(1){
+    margin-left:30px;
+}
+
+.ft-b-l dt{
+    font-size:14px;
+    font-weight: 600;
+}
+
+.ft-b-r{
+    float:left;
+    width:200px;
+    height:99px;
+    margin-top:30px;
+    padding-left:20px;
+    border-left-color: rgb(85, 85, 85);
+    border-left-width: 1px;
+    border-left-style: solid;
+    color:#fff;
+}
+.ft-b-r div:nth-child(1) li:nth-child(1) span:nth-child(1){
+    font-size:16px;
+    font-weight:600
+}
+.ft-b-r div:nth-child(1) li:nth-child(1) span:nth-child(2){
+    font-size:12px;
+    
+}
+.ft-b-r div:nth-child(1) li:nth-child(2){
+    font-size:18px;
+    font-weight:bold
+}
+.ft-b-r div:nth-child(2){
+    margin-top:20px;
+    font-size:12px;
+}

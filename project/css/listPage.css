@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/*列表主要部分*/
+#main{
+    width:990px;
+    height:1912px;
+    margin:0 auto;
+
+}
+
+/* 左侧列表 */
+.left-list{
+    width:190px;
+    /* height:679px; */
+    float:left;
+    margin-top:10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #e5e5e5;
+    user-select: none;
+    border-top:0;
+}
+.left-list a:hover{
+    color: #c00;
+}
+
+.left-list ul li h4{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f9f9f9;
+    padding-left: 15px;
+    line-height: 26px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+.left-list ul li h4 i{
+    display: inline-block;
+    width:11px;
+    height:11px;
+    background: url(https://www.hlamall.cn/css/img/btn-ico.png);
+    cursor: pointer;
+    background-position: -15px 228px;
+}
+.left-list ul li h4 a{
+    color:#333;
+    font-size:14px;
+    font-weight: 700;
+}
+
+.left-list ul li:nth-child(1) ul{
+    height:55px;
+    padding-left:15px;
+}
+.left-list ul li:nth-child(1) ul li{
+    float:left;
+    margin-right:5px;
+    line-height:26px;
+    font-size:14px;
+    color:#666;
+}
+.left-list ul li:nth-child(1) ul li a{
+    color:#666;
+}
+
+.left-list ul li:nth-child(2) ul li{
+    margin-left:15px;
+}
+.left-list ul li:nth-child(2) ul li i{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #666;
+    margin: 0;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+.left-list ul li:nth-child(2) ul li a{
+    color: #666;
+    line-height:26px;
+    font-size:14px;
+}
+
+.left-list ul li:nth-child(3) ul li{
+    margin-left:15px;
+}
+.left-list ul li:nth-child(3) ul li i{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #666;
+    margin: 0;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+.left-list ul li:nth-child(3) ul li a{
+    color: #666;
+    line-height:26px;
+    font-size:14px;
+}
+.left-list ul li ul li a:hover{
+    color: #c00;
+
+}
+
+/* 右边导航栏部分 */
+.head-sort{
+    width: 780px;
+    margin: 20px 0;
+    padding: 0 5px;
+    float: left;
+
+}
+.head-sort span{
+    user-select: none;
+    display: inline-block;
+    border: 1px #ccc solid;
+    color: #727272;
+    background: #F1EDEC;
+    cursor: pointer;
+    padding: 0 15px 0 5px;
+    margin-left: -1px;
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    font-size:14px;
+    float:left;
+}
+.head-sort span i{
+    background: url(https://www.hlamall.cn/css/img/sprite.png) no-repeat 9999px 9999px;
+    background-position: -22px -23px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 7px;
+    height: 10px;
+    line-height: 10px;
+    display: inline-block;
+}
+.sort-bt{
+    float:right;
+}
+.head-sort .sort-btn{
+    padding: 0 10px;
+    font-weight: 700;
+}
+.head-sort .sort-bt .len{
+    border: 1px #fff solid;
+    color: #727272;
+    background: #fff;
+    padding: 0 10px;
+    font-size:12px;
+}
+
+.right-list{
+    float:left;
+    width:790px;
+    margin-left:8px;
+}
+.right-list>ul{
+    float: left;
+    width: 100%;
+}
+.right-list>ul li{
+    width: 180px;
+    height: 350px;
+    padding: 5px 5px 30px;
+    margin-right: 9px;
+    float: left;
+
+}
+.right-list>ul li:nth-child(4n){
+    margin:0;
+}
+.right-list>ul li .price{
+    color: #c00;
+    font-family: arial,verdana,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+.right-list>ul li .detail{
+    color: #727272;
+    position: relative;
+    margin: 0;
+    margin-top: 22px;
+    overflow: hidden;
+    color: #666;
+    line-height: 1.5;
+    height: 36px;
+    width: 100%!important;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+
+}
+.right-list>ul li .rates{
+    color: #999;
+    font-family: tahoma,arial,'\5b8b\4f53';
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.right-list>ul li .rates font {
+    color: #c49173;
+    font-family: tahoma,arial,'\5b8b\4f53';
+    font-weight: bolder;
+}
+.right-list> ul li .thumb img {
+    padding: 2px;
+    border: 1px #cccccc solid;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.photo img{
+    width: 180px;
+    height: 180px;
+}
+
+
+
+.target-page{
+    float:right;
+    vertical-align: middle;
+    font-size: 12px;
+
+}
+.target-page .tpbtn{
+    float:left;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 -1px 5px 0;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #e2e2e2;
+}
+.layul-input{
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    vertical-align: top;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 40px;
+    margin: 0 10px;
+    padding: 0 3px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+}
+.inputPage{
+    margin-left:10px;
+}
+.layul-laypage-btn{
+    margin-left: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    vertical-align: top;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+
+}
+
+.selected {
+    border: 1px solid #c00;
+}

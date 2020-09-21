@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* 详情页主体顶部*/
+.details{
+    width:100%;
+}
+.details-box{
+    width:1200px;
+    margin:0 auto;
+}
+.fl{
+    float:left;
+}
+.details_top {
+    width: 990px;
+    height: 530px;
+    margin: 15px auto 15px 0px;
+
+}
+
+.details_top .good_img {
+    width: 460px;
+    height: 530px;
+
+}
+.details_top .good_img .head_figure {
+    width: 430px;
+    height: 430px;
+    margin: 15px;
+}
+.details_top .good_img .spec-n5 {
+    width: 420px;
+    height: 65px;
+    margin: 0 auto;
+
+}
+.details_top .good_img .spec-n5 ul li {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0px 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #fff;
+}
+.cur {
+    cursor: pointer;
+}
+
+.details_top .good_infor {
+    width: 525px;
+    height: 530px;
+    margin-left: 5px;
+}
+.details_top .good_infor .good_name {
+    width: 525px;
+    height: auto;
+    margin: 15px auto;
+}
+.details_top .good_infor .good_name span{
+    display: block;
+}
+
+.details_top .good_infor .good_name .goodname {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.details_top .good_infor .good_name .goodcode {
+    font-size: 14px;
+    color: #666;
+}
+.clear {
+    clear: both;
+}
+
+.details_top .good_infor .good_price {
+    width: 485px;
+    margin: 15px auto 8px auto;
+    background: url(https://www.hlamall.cn/img/pc-site/price_bg.png);
+    padding: 20px;
+}
+
+.details_top .zi {
+    font-size: 12px;
+    color: #999;
+    width: 70px;
+    line-height: 25px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+.details_top .good_infor .good_price .goodprice {
+    font-size: 18px;
+    color: #c00;
+    line-height: 25px;
+}
+
+
+.fontW {
+    font-weight: bold;
+}
