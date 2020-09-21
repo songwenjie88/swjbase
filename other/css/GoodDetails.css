@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* 详情页主体顶部*/
+.details{
+    width:100%;
+}
+.details-box{
+    width:1200px;
+    margin:0 auto;
+}
+.fl{
+    float:left;
+}
+.details_top {
+    width: 990px;
+    height: 530px;
+    margin: 15px auto 15px 0px;
+
+}
+
+.details_top .good_img {
+    width: 460px;
+    height: 530px;
+    position: relative;
+
+}
+.details_top .good_img .head_figure {
+    width: 430px;
+    height: 430px;
+    margin: 15px;
+}
+.details_top .good_img .spec-n5 {
+    width: 420px;
+    height: 65px;
+    margin: 0 auto;
+
+}
+.details_top .good_img .spec-n5 ul li {
+    width: 60px;
+    height: 60px;
+        ;
+    margin: 0px 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #fff;
+}
+.cur {
+    cursor: pointer;
+}
+.focus-box{
+    width:200px;
+    height:200px;
+    position: absolute;
+    background-color: #000;
+    left: 15px;
+    top: 15px;
+    z-index: 22;
+    display: none;
+    background-size: 430px;
+}
+.scale-box{
+    width:350px;
+    height:350px;
+    background-color: black;
+    position: absolute;
+    left:445px;
+    top:15px;
+    overflow: hidden;
+    display: none;
+}
+.scale-box-ele{
+    width:752.5px;/*焦点盒子和焦点盒子背景图片的比例等于右边放大展示盒子和放大展示盒子的图片的比例*/
+    height:752.5px;/**/
+    position: absolute;
+    
+    
+}
+
+.details_top .good_infor {
+    width: 525px;
+    height: 530px;
+    margin-left: 5px;
+}
+.details_top .good_infor .good_name {
+    width: 525px;
+    height: auto;
+    margin: 15px auto;
+}
+.details_top .good_infor .good_name span{
+    display: block;
+}
+
+.details_top .good_infor .good_name .goodname {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.details_top .good_infor .good_name .goodcode {
+    font-size: 14px;
+    color: #666;
+}
+.clear {
+    clear: both;
+}
+
+.details_top .good_infor .good_price {
+    width: 485px;
+    margin: 15px auto 8px auto;
+    background: url(https://www.hlamall.cn/img/pc-site/price_bg.png);
+    padding: 20px;
+}
+
+.details_top .zi {
+    font-size: 12px;
+    color: #999;
+    width: 70px;
+    line-height: 25px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+.details_top .good_infor .good_price .goodprice {
+    font-size: 18px;
+    color: #c00;
+    line-height: 25px;
+}
+
+
+.fontW {
+    font-weight: bold;
+}
+
+.details_top .good_img .spec-n5 ul li:hover {
+    border: 2px solid #000;
+}
+
+
+.details_top .good_infor .attribute {
+    width: 70px;
+    height: auto;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.details_top .good_infor .good_attribute {
+    width: 445px;
+    height: auto;
+}
+
+.details_top .good_infor .good_attribute .good_size li.active {
+    border: 1px solid #c00;
+}
+
+.details_top .good_infor .good_attribute .good_size li {
+    width: auto;
+    height: 25px;
+    padding: 0px 5px;
+    margin: 3px 2px;
+    border: 1px solid #b8b7bd;
+    font-size: 12px;
+    color: #000;
+    line-height: 25px;
+    float: left;
+}
+
+.option {
+    cursor: pointer;
+}
+
+
+.mt10 {
+    margin-top: 10px;
+}
+
+
+.details_top .good_infor .good_attribute .good_color {
+    width: 445px;
+    height: auto;
+}
+
+.details_top .good_infor .good_attribute .good_color li {
+    margin: 0 2px;
+    border: 1px solid #b8b7bd;
+    font-size: 12px;
+    color: #000;
+    line-height: 25px;
+    float: left;
+}
+
+
+.details_top .good_infor .good_attribute .good_color li.active {
+    border: 1px solid #c00;
+}
+
+.details_top .good_infor .good_attribute .good_num li .up_num, .details_top .good_infor .good_attribute .good_num li .lower_num {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #CCC;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    font-size: 13px;
+    color: #999;
+    line-height: 12px;
+    text-indent: 2px;
+}
+
+.details_top .good_infor .good_attribute .good_num li .num_input {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    text-indent: 2px;
+    border: 1px solid #CCC;
+}
+span {
+    display: block;
+}
+
+
+.details_top .good_infor .good_attribute .good_num li .collection {
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 11px 5px auto auto;
+    background: url(https://www.hlamall.cn/img/pc-site/star.png) no-repeat;
+    background-position: 0 0;
+}
+
+.details_top .good_infor .good_attribute .good_num li {
+    width: auto;
+    height: 25px;
+    float: left;
+}
+.mt5 {
+    margin-top: 5px;
+}
+
+
+.details_top .good_infor .good_to_buy {
+    width: 445px;
+    height: auto;
+}
+
+
+.details_top .good_infor .good_to_buy .buy_now {
+    width: 178px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    color: #FF0036;
+    font-family: 'Microsoft Yahei';
+    overflow: hidden;
+    background-color: #ffeded;
+    border: 1px solid #FF0036;
+}
+
+.details_top .good_infor .good_to_buy .buy_after {
+    width: 178px;
+    height: 38px;
+    overflow: hidden;
+    background: #ff0036;
+    border: 1px solid #ff0036;
+    margin-left: 10px;
+}
+
+.details_top .good_infor .good_to_buy .buy_after .buy {
+    width: auto;
+    height: 16px;
+    background: url(https://www.hlamall.cn/img/pc-site/buy.png) 0 2px no-repeat;
+    display: block;
+    float: left;
+    margin: 11px 39px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Microsoft Yahei';
+    text-indent: 18px;
+}

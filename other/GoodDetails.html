@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目-详情页</title>
+    <link rel="stylesheet" href="./css/GoodDetails.css">
+    <link rel="shortcut icon" href="images/favcion.ico">
+</head>
+<body>
+    <div class="public-head">
+        <script src="js/head.js"></script>
+    </div>
+    <div class="details">
+        <div class="details-box">
+            <div class="fl">
+                <div class="details_top">
+                    <!-- <div class="focus-box"></div> -->
+                    <div class="good_img fl">
+                        <div class="scale-box">
+                            <img src="" class="scale-box-ele">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="good_infor fl">
+                        <div class="good_name">
+                            <span class="goodname"></span>
+                            <span class="goodcode"></span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="good_price">
+                            <span class="zi fl ml10">优惠价</span>
+                            <span class="goodprice fontW priceNum"></span>
+                        </div>
+                        <div class="attribute fl ml10 ">
+                            <span class="zi">尺码</span>
+                        </div>
+                        <div class="good_attribute fl ">
+                            <form id="sizeForm">
+                                <ul class="good_size fl"></ul>
+                            </form>
+                        </div>
+                        <div class="attribute fl ml10 mt30">
+                            <span class="zi mt10">颜色分类</span>
+                        </div>
+                        <div class="good_attribute fl mt30">
+                            <form id="colorForm">
+                                <ul class="good_color fl"></ul>
+                            </form>
+                        </div>
+                    <div class="attribute fl ml10 mt30 " style="clear:left">
+                        <span class="zi mt5">数量</span>
+                    </div>
+                    <div class="good_attribute fl mt30">
+                        <ul class="good_num fl">
+                            <li>
+                                <input placeholder value="1" class="num_input" id="num">
+                            </li>
+                            <li>
+                                <span class="up_num cur">∧</span>
+                                <span class="lower_num cur">∨</span>
+                            </li>
+                            <li>
+                                <span class="zi mt5 ml10">件</span>
+                            </li>
+                            <li class="cur favBtn">
+                                <span class="collection"></span>
+                                <span class="zi mt5 fl">收藏该商品</span>
+                            </li>
+                            <li>
+                                <span style="display:inline"   class="zi mt5 fl">
+                                库存<span id="stockNum" style="display:inline">28</span>件
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="good_to_buy fl mt30">
+                        <div class="buy_now fl cur">立即购买</div>
+                        <div class="buy_after fl cur">
+                            <i class="buy">加入购物车</i>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script>
+   
+</script>
+<script type="module">
+    import GoodDetails from "./js/GoodDetails.js"
+    let GoodListEle=new GoodDetails();
+</script>
+
+</html>
