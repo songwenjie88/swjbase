@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">username</label>
+        <input type="text" id="username">
+        <label for="account">useraccount</label>
+        <input type="text" id="useraccount">
+        <label for="userpassword">userpassword</label>
+        <input type="text" id="userpassword">
+        <button>注册</button>
+    </form>
+</body>
+<script>
+    var inputs,btn,form,username,useraccount,userpassword
+    init();
+    function init(){
+        form = document.querySelector("form")
+        // inputs = document.querySelectorAll("input")
+        username=document.querySelector("#username")
+        useraccount=document.querySelector("#useraccount")
+        userpassword=document.querySelector("#userpassword")
+        btn = document.querySelector("button");
+        form.addEventListener("submit",submitHandler);
+        btn.addEventListener("click",clickHandler)
+    }
+    function submitHandler(e){
+        e.preventDefault()
+    }
+    function clickHandler(){
+        var data = {
+            name : username,
+            account : useraccount,
+            password : userpassword,
+        }
+        ajax(data);
+    }
+    function ajax(data){
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load",loadHadler);
+        xhr.open("POST","http://10.20.159.169:5000/registe");
+        xhr.send(JSON.stringify(data))
+    }
+    function loadHadler(e){
+        console.log(e.currentTarget.response)
+    }
+</script>
+</html>

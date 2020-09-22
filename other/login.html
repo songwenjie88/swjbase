@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目-登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div><script src="js/head.js"></script></div>
+    <div class="main">
+        <div class="w1200">
+            <span class="w-title">请登录</span>
+            <div class="login-box">
+                <div class="login-box-1">
+                    <div class="login-title">请输入您的账号和密码</div>
+                    <div class="box">
+                        <span class="box-title">手机号：</span>
+                        <input type="text" class="login-tel" id="loginUserName">
+                    </div>
+                    <div class="box">
+                        <span class="box-title">密&nbsp;&nbsp;&nbsp;码：</span>
+                        <input id="loginPassword" type="password" class="login-password">
+                    </div>
+                    <div class="box">
+                        <span class="forget">
+                            <a href="">忘记了自己的账号密码？</a>
+                            <input type="button" class="login" id="loginbtn" value="登录">
+                        </span>
+                    </div>
+                    <div class="box">
+                        <span>使用其他合作网站登录</span>
+                        <ul>
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=1488880671&response_type=code&redirect_uri=http%3A%2F%2Fwww.hlamall.cn%2Fweibo%2FoAuthCallback">
+                            <li>
+                                <img src="http://www.hlamall.cn:80/img/pc-site/sina.png" >
+                                <span>新浪微博</span>
+                            </li></a>
+                            <a href="https://graph.qq.com/oauth2.0/authorize?client_id=101183819&response_type=code&scope=get_user_info&redirect_uri=http%3A%2F%2Fwww.hlamall.cn%2Fqq%2FoAuthCallback"><li>
+                                <img src="http://www.hlamall.cn:80/img/pc-site/qq.png" alt="">
+                                <span>腾讯QQ</span>
+                            </li>
+                            </a>
+                            <a href="https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2016012301115319&scope=auth_base&redirect_uri=http%3A%2F%2Fwww.hlamall.cn%2Falilogin%2FoAuthCallback">
+                            <li>
+                                <img src="http://www.hlamall.cn:80/img/pc-site/alipay.png" alt="">
+                                <span>支付宝</span>
+                            </li></a>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="login-box-2">
+                    <div class="login2-title">注册成为新用户</div>
+                    <div class="login2-tips">
+                        现在免费注册成为海澜之家用户，便能立刻享受便宜又
+                        <br>放心的购物乐趣。
+                    </div>
+                    <ul>
+                        <li>简单快捷1分钟完成注册</li>
+                        <li>注册用户可方便的收藏商品</li>
+                        <li>注册用户可方便的管理查询自己的订单</li>
+                    </ul>
+                    <a href="./register.html">
+                    <input type="button" class="free-register" value="免费注册"></a>
+                </div>
+                <div class="login-box-3">
+                    <input type="button" value="取消"class="cancel">
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+</html>

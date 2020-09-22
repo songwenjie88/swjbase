@@ -34,11 +34,14 @@ export default class trastFn{
     tr_hidden_btn=document.querySelector(".trast_hidden")
     tr_show_btn=document.querySelector(".trast_show")
     trast_con=document.querySelector("#trast_container")
+   
 
     trasting=true;
     constructor(){
         this.trClick();   
         this.trastBox();
+        
+       
 
     }
     trClick(){
@@ -67,6 +70,8 @@ export default class trastFn{
         this.tr_show_btn.style.display="none"
     
     }
+
+    
     
 
 }

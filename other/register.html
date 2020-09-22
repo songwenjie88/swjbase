@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目-注册界面</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="shortcut icon" href="images/favcion.ico">
+</head>
+<body>
+    <div>
+        <script src="js/head.js"></script>
+    </div>
+    <div class="main">
+        <div class="w1200">
+            <span class="w-title">注册新账号</span>
+            <div class="register-box">
+                <div class="tel-box box">
+                    <span class="box-title">手机号：</span>
+                    <input type="tel" id="phone" class="register-tel">
+                </div>
+                <div class="password-box box">
+                    <span class="box-title">设定密码：</span>
+                    <input type="password" id="loginPassword" class="register-password">
+                    <div class="password-tips">
+                        <span>6~16个字符，包括字母、数字、特殊符号，区分大小写</span>
+                        <br>
+                        <span>密码强度：弱</span>
+                        <ul class="password-state">
+                            <li class="strong"></li>
+                            <li class="strong"></li>
+                            <li class="strong"></li>
+                        </ul>
+                        <span>强</span>
+                    </div>
+                </div>
+                <div class="comfirm-box box">
+                    <span class="box-title">确认密码：</span>
+                    <input type="password" id="tryPassword" class="register-comfirm">
+                    <span class="comfirm-tips">密码不一致</span>
+                </div>
+                <label class="box">
+                    <input type="checkbox" id="read" name="read" class="read">
+                    <span>我已阅读并接受
+                        <a href="https://www.hlamall.cn/cms/getHeiLanCms/7c5df196-d25c-4e65-b90f-8568e69788a0?selected=%E6%9C%8D%E5%8A%A1%E6%9D%A1%E6%AC%BE">《海澜之家服务条款》</a>
+                        <a href="https://www.hlamall.cn/cms/getHeiLanCms/75167e03-518a-4356-9ba9-37fb69c00c1c?selected=%E9%9A%90%E7%A7%81%E5%A3%B0%E6%98%8E&channel=helpMenu">《隐私条款》</a>
+                    </span>
+                </label>
+                <div class="box">
+                    <input type="submit" value="确认" id="subReg" class="register-submit">
+                    <span class="backToLogin">
+                        <a href="" style="border-width:0; font-size: 14px;">返回登录</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="./js/register.js"></script>
+</html>

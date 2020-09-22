@@ -85,7 +85,7 @@ export default class homeAdvImg{
   static ajax(){
     let xhr=new XMLHttpRequest();
     xhr.addEventListener("load",homeAdvImg.loadHandler);
-    xhr.open("POST","http://127.0.0.1:4011/advImg");
+    xhr.open("POST","http://10.20.159.169:5000/advImg");
     xhr.send();
   }
   static loadHandler(e){

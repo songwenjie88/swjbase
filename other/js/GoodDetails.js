@@ -23,7 +23,7 @@ export default class GoodDetails{
    ajax(){
     let xhr=new XMLHttpRequest();
     xhr.addEventListener("load",e=>this.loadHandler(e));
-    xhr.open("POST","http://127.0.0.1:4011/GoodDetails");
+    xhr.open("POST","http://10.20.159.169:5000/GoodDetails");
     xhr.send();
   }
    loadHandler(e){
