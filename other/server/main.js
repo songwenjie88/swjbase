@@ -1,51 +1,6 @@
 var http=require("http");
 var querystring=require("querystring");
-var sql = require("mysql");
-
 var data,req,res;
-var db = sql.createConnection({
-    url: "localhost",
-    port: 3306,
-    user: "root",
-    password: "root",
-    database: "hlamall"
-});
-
-
-db.connect(function (err) {
-    if (err) {
-        console.log("连接失败");
-        return;
-    } else {
-        console.log("连接成功");
-    }
-})
-
-
-
-// 数据查询
-function sql_select(table,res1,callback) {
-    var sql = "select * from "+table;
-    db.query(sql, function (err, results) {
-        if(callback){
-            callback(results,res1);
-            return;
-        }
-        res1.write(JSON.stringify(results));
-        res1.end()
-    })
-
-}
-
-
-function sql_insert(phone,password) {
-    let sql = "INSERT INTO `user`(`phone`, `password`) VALUES (?,?)";
-    db.query(sql, [phone, password], function (error, res) {
-        console.log(error)
-        console.log(res);
-    })
-}
-
 var arr = {
 "advImg":[
     {imgsrc:'https://img.alicdn.com/imgextra/i3/1657259311/O1CN01PkNphG2IeUO6xyEgY_!!1657259311.jpg'},
@@ -301,9 +256,8 @@ var arr = {
 }
 
 var server=http.createServer(creatHandler);
-server.listen("5000", "10.20.159.169", function () {
-    console.log("开启成功")
-})
+server.listen(4011,"127.0.0.1");
+
 
 function creatHandler(_req,_res){
     req=_req;
@@ -323,13 +277,9 @@ function endHandler(){
         "Access-Control-Allow-Origin":"*",
         "Access-Control-Allow-Headers":"*"
     });
-
-
     var type=req.url.indexOf("?")>-1 ? req.url.split("?")[0] : req.url;
     type=type.slice(1);
     var obj;
-
-
     if(req.method.toLowerCase()==="get"){
         if(req.url.indexOf("?")>-1){
             obj=querystring.parse(req.url.split("?")[1]);
@@ -345,57 +295,21 @@ function endHandler(){
         return;
     }
     switch (type) {
-        case "login":
-                sql_select("user",res,function(results,res1){   
-                    var a;
-                    results.forEach(function(item){
-                        if(item.password === obj.password && item.phone === obj.phone ){
-                            a ={}
-                            a.name = item.phone;
-                        }
-                    });
-                    if(a){
-                        res1.write(JSON.stringify(a));
-                        res1.end();
-                        return;
-                    }
-                    // res1.write();
-                    res1.end("账号或密码错误");
-                    
-                })
-                break;
-            case "registe":
-                sql_select("user",res,function(results,res1){
-                    var flag = results.some(function(item){
-                        return item.phone === obj.phone
-                    })
-                    if(flag){
-                        res1.write("该手机已被注册");
-                        res1.end();
-                        return
-                    }
-                    console.log(obj)
-                    sql_insert(obj.phone, obj.password);
-                    res1.write("恭喜您成功注册");
-                    res1.end();
-                })
-                break;
         case "advImg":
            
             res.write(JSON.stringify(arr["advImg"]))
-            res.end();
+
            
             break;
         case "GoodList":
             res.write(JSON.stringify(arr["GoodList"]))
-            res.end();
+
+         
             break;
         case "GoodDetails":
             res.write(JSON.stringify(arr["GoodList"]))
-            res.end();
             break;
-            
     }
-    
+    res.end();
 }
 

@@ -8,7 +8,7 @@ export default class GoodList{
    ajax(){
     let xhr=new XMLHttpRequest();
     xhr.addEventListener("load",e=>this.loadHandler(e));
-    xhr.open("POST","http://10.20.159.169:5000/GoodList");
+    xhr.open("POST","http://127.0.0.1:4011/GoodList");
     xhr.send();
   }
    loadHandler(e){
